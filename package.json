@@ -1,0 +1,32 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "page-loader",
+  "main": "index.js",
+  "bin": {
+    "page-loader": "bin/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "npx jest --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naz882/backend-project-lvl3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naz882/backend-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/naz882/backend-project-lvl3#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "commander": "^9.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "jest": "^28.1.3",
+    "nock": "^13.2.9"
+  }
+}
