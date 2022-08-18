@@ -21,8 +21,7 @@ export const downloadPage = async (website, pathtoFile) => {
         });
       }
     })
-    
-
+  
   });
 }
 
