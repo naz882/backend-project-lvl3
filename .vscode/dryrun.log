@@ -1,3 +1,4 @@
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/nazymguliyev/Documents/projects/hexlet/backend-project-lvl3'
 npm ci
 make: Leaving directory `/Users/nazymguliyev/Documents/projects/hexlet/backend-project-lvl3'

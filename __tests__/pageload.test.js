@@ -13,10 +13,11 @@ const __dirname = dirname(__filename);
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 
 const test_page = getFixturePath('test.html');
-const result = getFixturePath('result-test.html');
-
+const result = getFixturePath('expected/result-test.html');
 let tempdir;
-let pathToFinalFile
+let  pathToFinalFile
+
+
 
 beforeEach( async () => {
     await fs.unlink(tempdir).catch(_.noop);
@@ -32,5 +33,5 @@ test('test1', async () => {
         .reply(200, website);
     await downloadPage('https://example.com', tempdir);
     const downloadedPage = await fs.readFile(pathToFinalFile, 'utf-8');
-    await exepct(downloadedPage).toEqual(finalResult.toString());
+    await expect(downloadedPage).toEqual(finalResult.toString());
 })
